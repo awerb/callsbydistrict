@@ -218,7 +218,7 @@ def main() -> None:
     end_date   = datetime.utcnow().date()
 
     print("\nTransparent SF 311 Blotter")
-    print(f"Weekly window: {start_date} – {end_date}\n")
+    print(f"Date Range: {start_date} – {end_date}\n")
     print(f"{int(total_this):,} total 311 requests citywide, {fmt_pct(city_pct)} vs. prior week\n")
 
     for _, d in dist_trend.sort_values("supervisor_district").iterrows():
